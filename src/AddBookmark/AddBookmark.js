@@ -16,6 +16,7 @@ class AddBookmark extends Component {
 
   handleSubmit = e => {
     e.preventDefault()
+    console.log(config.API_KEY)
     // get the form fields from the event
     const { title, url, description, rating } = e.target
     const bookmark = {
