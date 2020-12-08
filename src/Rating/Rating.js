@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './Rating.css';
 
 export default function Rating(props) {
