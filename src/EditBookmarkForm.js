@@ -49,8 +49,8 @@ export default class EditBookmarkForm extends Component {
         //insert validation here//
 
         const bookmarkId = this.props.match.params.bookmarkId
-        const { id, title, url, description, rating } = this.state
-        const newBookmark = {id, title, url, description, rating}
+        const { title, url, description, rating } = this.state
+        const newBookmark = {id: parseInt(bookmarkId), title, url, description, rating}
 
         fetch(`http://localhost:8000/api/bookmarks/${bookmarkId}`, {
             method: 'PATCH',
